@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# This script secure all wordpress folders and files permissions
+# This script allows worpdres automatic update by changing folders and files permissions
 
 # This is the folder where all your WordPress installations are:
 www=/www
