@@ -12,12 +12,10 @@ for d in $www/*/; do
     if [ -f $d/wp-config.php ]; then
 	# WordPress Found at $d
 	echo "WordPress found! $d"
-	chown root:root $d -R
-	find $d -type d -exec chmod 755 {} \;
-	find $d -type f -exec chmod 644 {} \;
-	chown apache:apache $d/wp-content -R
-	find $d/wp-content -type d -exec chmod 777 {} \;
-	find $d/wp-content -type f -exec chmod 666 {} \;
+	chown apache:apache $d -R
+	find $d -type d -exec chmod 775 {} \;
+	find $d -type f -exec chmod 664 {} \;
+	chown root:root $d/wp-config.php
 	chmod 644 $d/wp-config.php
     fi
 done
