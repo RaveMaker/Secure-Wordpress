@@ -20,7 +20,7 @@ the 'unsecure' mode allows users to update Wordpress itself while the 'secure' m
 
 both modes are set according to wordpress.com instructions.
 
-> wp-config.php is to root:root with 644 permissions in both modes. 
+> wp-config.php is set to root:root with 644 permissions in both modes. 
 
 Author: [RaveMaker][RaveMaker].
 
