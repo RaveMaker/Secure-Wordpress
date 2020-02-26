@@ -18,7 +18,6 @@ for d in "$www"/*/; do
     find "$d" -type f -exec chmod 664 {} \;
     chown root:apache "$d"/wp-config.php
     chmod 640 "$d"/wp-config.php
-    chcon -R -t httpd_sys_content_t "$d"
-    chcon -R -t httpd_sys_rw_content_t "$d"/wp-content
+    chcon -R -t httpd_sys_rw_content_t "$d"
   fi
 done
