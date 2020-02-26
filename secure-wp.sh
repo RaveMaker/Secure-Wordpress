@@ -19,8 +19,8 @@ for d in "$www"/*/; do
     chown root:apache "$d"/wp-config.php
     chmod 640 "$d"/wp-config.php
     chown apache:apache "$d"/wp-content -R
-    find "$d"/wp-content -type d -exec chmod 777 {} \;
-    find "$d"/wp-content -type f -exec chmod 666 {} \;
+    find "$d"/wp-content -type d -exec chmod 775 {} \;
+    find "$d"/wp-content -type f -exec chmod 664 {} \;
     chcon -R -t httpd_sys_content_t "$d"
     chcon -R -t httpd_sys_rw_content_t "$d"/wp-content
   fi
