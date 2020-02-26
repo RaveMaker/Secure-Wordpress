@@ -3,9 +3,11 @@ Secure-Wordpress
 
 Fix permissions for all Wordpress instances installed in a specific folder.
 
+Also supports SELinux Enforcing.
+
 ### Installation
 
-1. Clone this script from github or copy the files manually to your prefered directory.
+1. Clone this script from github or copy the files manually to your preferred directory.
 
 2. Edit both scripts and point 'www' param to your Wordpress folder.
 - for example: /var/www/html  
