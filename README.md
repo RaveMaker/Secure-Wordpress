@@ -9,8 +9,13 @@ Also supports SELinux Enforcing.
 
 1. Clone this script from github or copy the files manually to your preferred directory.
 
-2. Edit both scripts and point 'www' param to your Wordpress folder.
-- for example: /var/www/html  
+2. Edit script and point 'www' param to the folder containing your Wordpress folders.
+
+- for example if Wordpress is located in /var/www/html/wordpress:
+
+```
+/var/www/html
+```
 
 Supports two modes:
 - secure-wp will set all permissions to root:root with read access for others.
